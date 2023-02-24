@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="aqiStyle.css">
+    <script src="aqi.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index</title>
+</head>
+<body>
+    <div class="flex-container">
+        <header class="title" id="titleText">Air Quality Index App</header>
+    </div>
+    <div class="flex-container2">
+        <input class="inputBox" type="text" placeholder="Search for City" onkeypress="return AQIndex.search()">
+    </div>
+    <div class="flex-container3">
+        <div class="box">
+            <!-- this will contain the data or information -->
+            <div class="cityName" id="city">City</div>
+            <div class="temp">0</div>
+            <div class="tempFlex">
+                <div class="highTemp">Longitude</div>
+                <div class="lowTemp">Latitude</div>
+            </div>
+            <div class="tempFlex2">
+                <div class="long"></div>
+                <div class="lat"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
